@@ -1,0 +1,6 @@
+<scene version="0.6.0">
+  <integrator type="path">
+    <integer name="maxDepth" value="4"/>
+    <integer name="rrDepth" value="10"/>
+  </integrator>
+</scene>

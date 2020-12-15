@@ -1,0 +1,28 @@
+<scene version="0.6.0">
+
+  <!-- Settings for focussed probe image -->
+  <default name="cropW" value="600"/>
+  <default name="cropH" value="600"/>
+  <default name="cropX" value="1024"/>
+  <default name="cropY" value="670"/>
+  
+  <include filename="includes/sensor_hf_setup.xml"/>
+
+  <default name="hfName" value="gelpad_tri0s" />
+  <default name="elastomerDist" value="13"/>
+  
+  <shape type="obj" name="gelpad">
+    <boolean name="faceNormals" value="false"/>
+    <transform name="toWorld">
+      <scale x="20" y="20" z="-20"/>
+      <rotate x="1" angle="90"/>
+      <rotate z="1" angle="180"/>
+      <translate x="0" y="$elastomerDist" z="0"/>
+    </transform>
+
+    <string name="filename" value="meshes/$hfName.obj"/>
+    
+    <ref id="elastomerBsdf"/>
+  </shape>
+
+</scene>

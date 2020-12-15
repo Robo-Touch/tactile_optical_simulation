@@ -1,0 +1,118 @@
+<scene version="0.6.0">
+  
+  
+  
+
+  <emitter type="spot" id="blue">
+    <transform name="toWorld">
+      <translate x="-4.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue1">
+    <transform name="toWorld">
+      <translate x="-4.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue2">
+    <transform name="toWorld">
+      <translate x="-1.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue3">
+    <transform name="toWorld">
+      <translate x="-1.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue4">
+    <transform name="toWorld">
+      <translate x="1.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue5">
+    <transform name="toWorld">
+      <translate x="1.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue6">
+    <transform name="toWorld">
+      <translate x="4.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="blue7">
+    <transform name="toWorld">
+      <translate x="4.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="120" y="1" />
+    </transform>
+    
+    <spectrum name="intensity" value="$blueIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+</scene>

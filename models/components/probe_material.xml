@@ -1,0 +1,13 @@
+<scene version="0.6.0">
+
+  <!-- <bsdf type="conductor" id="probeBsdf">
+    <string name="material" value="Al"/>
+	</bsdf> -->
+	
+  <bsdf type="roughconductor" id="probeBsdf">
+    <string name="distribution" value="ggx"/>
+    <float name="alpha" value="0.01"/>
+    <string name="material" value="Al"/>
+  </bsdf>
+
+</scene>

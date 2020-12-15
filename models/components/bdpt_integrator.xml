@@ -1,0 +1,8 @@
+<scene version="0.6.0">
+  <integrator type="bdpt">
+    <boolean name="lightImage" value="true"/>
+    <integer name="maxDepth" value="4"/>
+    <integer name="rrDepth" value="10"/>
+    <boolean name="sampleDirect" value="true"/>
+  </integrator>
+</scene>

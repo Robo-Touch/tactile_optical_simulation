@@ -1,0 +1,13 @@
+<scene version="0.6.0">
+
+  <!-- Settings for focussed probe img -->
+  <!-- <default name="cropW" value="256"/>
+  <default name="cropH" value="256"/>
+  <default name="cropX" value="1111"/>
+  <default name="cropY" value="939"/> -->
+
+  <include filename="includes/sensor_hf_setup.xml"/>
+
+  <include filename="components/probe_material.xml"/>
+  <include filename="components/probe_model.xml"/>
+</scene>

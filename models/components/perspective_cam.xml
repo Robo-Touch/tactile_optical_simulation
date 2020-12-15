@@ -1,0 +1,41 @@
+<scene version="0.6.0">
+
+  <default name="fovVal" value="53.3"/>
+
+  <sensor type="perspective">
+    
+    <transform name="toWorld">
+      <!-- <lookat origin="-1.1029, -24.4, -1.3235" target="-1.1029, 8.65, -1.3235" up="0, 0, -1"/> -->
+      <!-- <lookat origin="-1.1029, -26.4, -1.3235" target="-1.1029, 8.65, -1.3235" up="0, 0, -1"/> -->
+
+      <!-- works for round gel -->
+      <lookat origin="-1.1029, -28.05, -1.3235" target="-1.1029, 8.65, -1.3235" up="0, 0, -1"/>
+    </transform>
+
+    <float name="fov" value="$fovVal"/>
+    <string name="fovAxis" value="larger"/>
+
+    <float name="nearClip" value="5.0"/>
+    <float name="farClip" value="50"/>   
+
+    <sampler type="independent">
+      <integer name="sampleCount" value="$num_samples"/>
+    </sampler>
+
+    <!-- <sampler type="stratified">
+      <integer name="sampleCount" value="$num_samples"/>
+    </sampler> -->
+
+    <film type="hdrfilm">
+      <integer name="width" value="$resW"/>
+      <integer name="height" value="$resH"/>
+      <integer name="cropOffsetX" value="$cropX"/>
+      <integer name="cropOffsetY" value="$cropY"/>
+      <integer name="cropWidth" value="$cropW"/>
+      <integer name="cropHeight" value="$cropH"/>
+
+      <!-- <boolean name="banner" value="false"/> -->
+    </film>
+
+  </sensor>
+</scene>

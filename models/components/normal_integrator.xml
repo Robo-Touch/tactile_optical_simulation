@@ -1,0 +1,9 @@
+<scene version="0.6.0">
+	<integrator type="aov">
+		<string name="aovs" value="shn:sh_normal,geom:geo_normal,pos:position"/>
+	  <integrator type="path">
+	    <integer name="maxDepth" value="3"/>
+	    <integer name="rrDepth" value="10"/>
+	  </integrator>
+	 </integrator>
+</scene>

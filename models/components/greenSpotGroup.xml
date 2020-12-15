@@ -1,0 +1,110 @@
+<scene version="0.6.0">
+  
+  
+  
+
+  <emitter type="spot" id="green">
+    <transform name="toWorld">
+      <translate x="-4.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green1">
+    <transform name="toWorld">
+      <translate x="-4.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green2">
+    <transform name="toWorld">
+      <translate x="-1.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green3">
+    <transform name="toWorld">
+      <translate x="-1.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green4">
+    <transform name="toWorld">
+      <translate x="1.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green5">
+    <transform name="toWorld">
+      <translate x="1.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green6">
+    <transform name="toWorld">
+      <translate x="4.50" y="-2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+<emitter type="spot" id="green7">
+    <transform name="toWorld">
+      <translate x="4.50" y="2.00" z="0.0" />
+      
+      <rotate angle="-19" x="1" />
+      <translate x="0" y="4.207" z="-14.59" />
+      <rotate angle="240" y="1" />
+    </transform>
+    <spectrum name="intensity" value="$greenIntensity" /> 
+    <float name="cutoffAngle" value="40" />
+    <float name="beamWidth" value="20" />
+  </emitter>  
+
+</scene>

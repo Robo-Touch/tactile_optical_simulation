@@ -1,0 +1,18 @@
+<scene version="0.6.0">
+
+  <default name="fixtureX" value="-0.1851"/>
+  <default name="fixtureZ" value="0.2061"/>
+  <default name="fixtureDist" value="13"/>
+
+  <shape type="obj" id="pressedObject">
+    <string name="filename" value="meshes/unit_sphere.obj"/>
+    <transform name="toWorld">
+    	<scale x="2" y="2" z="2"/>
+      <!-- <rotate y="1" angle="$fixtureAngle"/> -->
+      <translate x="$fixtureX" z="$fixtureZ" y="$fixtureDist"/>
+    </transform>
+    <ref id="probeBsdf"/>
+    <boolean name="faceNormals" value="true"/>
+  </shape>
+  
+</scene>

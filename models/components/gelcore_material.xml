@@ -1,0 +1,11 @@
+<scene version="0.6.0">
+
+  <bsdf type="roughdielectric" id="coreBsdf">
+		<string name="distribution" value="ggx"/>
+		<float name="intIOR" value="1.5403"/>
+		<string name="extIOR" value="air"/>
+		<float name="alphaU" value="0.3"/>
+		<float name="alphaV" value="0.3"/>
+	</bsdf>
+
+</scene>

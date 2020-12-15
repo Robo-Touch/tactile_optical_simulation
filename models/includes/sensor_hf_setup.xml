@@ -1,0 +1,29 @@
+<scene version="0.6.0">
+
+	<default name="num_samples" value="128"/>
+	<default name="resW" value="2592"/>
+	<default name="resH" value="1944"/>
+
+  <!-- Settings for full sensor view -->
+  <default name="cropW" value="$resW"/>
+	<default name="cropH" value="$resH"/>
+  <default name="cropX" value="0"/>
+	<default name="cropY" value="0"/>
+    
+  <default name="lightFn" value="all_lights.xml"/>
+  <include filename="components/$lightFn"/>
+  
+  <include filename="components/perspective_cam.xml"/>
+
+  <include filename="components/gelcore_material.xml"/>
+  <shape type="obj">
+    <string name="filename" value="meshes/gelcore_with_light_faces_uv.obj"/>
+    <ref id="coreBsdf"/>
+  </shape>
+
+  <default name="integratorFn" value="bdpt_integrator"/>
+  <include filename="components/$integratorFn.xml"/>
+
+  <include filename="components/elastomer_material.xml"/>
+  
+</scene>

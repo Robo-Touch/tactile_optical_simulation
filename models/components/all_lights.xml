@@ -1,0 +1,37 @@
+<scene version="0.6.0">
+
+  <bsdf type="diffuse" id="black">
+    <rgb name="reflectance" value="0.1,0.8,0.1"/>
+  </bsdf>
+	
+  <!-- domegel -->
+  <!-- <default name="redIntensity" value="630:600, 645:600"/> -->
+  <!-- <default name="greenIntensity" value="525:1000, 530:1000"/> -->
+  <!-- <default name="blueIntensity" value="460:1000, 465:1000"/> -->
+
+  <!-- flatgel -->
+  <default name="redIntensity" value="630:100, 645:100"/>
+  <default name="greenIntensity" value="525:500, 530:500"/>
+  <default name="blueIntensity" value="460:1000, 465:1000"/>
+
+  <include filename="components/redSpotGroup.xml"/>
+  <include filename="components/greenSpotGroup.xml"/>
+  <include filename="components/blueSpotGroup.xml"/>
+
+  <!-- <include filename="fragments/blueSpotGroup.xml"/> -->
+  <!-- <include filename="fragments/greenAreaLight.xml"/> -->
+  <!-- <include filename="fragments/blueAreaLight.xml"/> -->
+
+  <!-- <include filename="fragments/redIESGroup.xml"/> -->
+  <!-- <include filename="fragments/greenIESGroup.xml"/> -->
+  <!-- <include filename="fragments/blueIESGroup.xml"/> -->
+
+  <!-- <include filename="fragments/redSVAreaGroup.xml"/> -->
+  <!-- <include filename="fragments/greenSVAreaGroup.xml"/> -->
+  <!-- <include filename="fragments/blueSVAreaGroup.xml"/> -->
+
+  <!-- <include filename="fragments/redSpatialAreaLight.xml"/> -->
+  <!-- <include filename="fragments/greenSpatialAreaLight.xml"/> -->
+  <!-- <include filename="fragments/blueSpatialAreaLight.xml"/> -->
+
+</scene>
