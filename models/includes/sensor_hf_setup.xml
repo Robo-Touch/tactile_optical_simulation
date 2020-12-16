@@ -21,7 +21,7 @@
     <ref id="coreBsdf"/>
   </shape>
 
-  <default name="integratorFn" value="bdpt_integrator"/>
+  <default name="integratorFn" value="path_integrator"/>
   <include filename="components/$integratorFn.xml"/>
 
   <include filename="components/elastomer_material.xml"/>
