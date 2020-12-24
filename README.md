@@ -8,7 +8,7 @@ The project uses [Mitsuba2 renderer](https://mitsuba2.readthedocs.io/en/latest/)
 You can also use docker images which are available [here](https://github.com/arpit15/mitsuba2-docker)
 
 # Usage
-- `python generate_image.py`
+- `python3 generate_image.py`
 - To choose the configuration file see files inside `file_list_cfgs`
 - To choose the render configurations see files inside `render_cfgs`
 
