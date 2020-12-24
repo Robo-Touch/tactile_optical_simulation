@@ -5,6 +5,7 @@ Tactile optical simulation
 
 # Setup
 The project uses [Mitsuba2 renderer](https://mitsuba2.readthedocs.io/en/latest/)(v2.1.0) for generating all the images. For quick start, python package for renderer is available [here](https://github.com/CMURoboTouch/mitsuba2-python-package).
+You can also use docker images which are available [here](https://github.com/arpit15/mitsuba2-docker)
 
 # Usage
 - `python generate_image.py`
