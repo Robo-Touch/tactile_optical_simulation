@@ -1,1 +1,3 @@
 *.exr
+__pycache__/
+*.pyc
