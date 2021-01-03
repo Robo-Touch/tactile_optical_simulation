@@ -6,6 +6,10 @@ from mitsuba.core import Thread
 from os import path as osp
 from os.path import join
 
+import imageio 
+# to load exrs
+imageio.plugins.freeimage.download()
+
 from tactile_optical_simulation.scene_cfg_loading_utils import load_render_cfg, load_img_with_cfg, load_scene_from_params
 
 # Load file list 
