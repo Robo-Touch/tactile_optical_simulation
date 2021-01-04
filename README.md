@@ -36,4 +36,6 @@ pip3 install -r requirements.txt
 
 # Known issues
 - Currently mitsuba2 outputs artifacts in rendered image on macOS
-![Mac Rendered Image](results/flatgel/tri1u_sim_mac.png)
+| ![Linux](results/flatgel/tri1u_sim.png) | ![Mac](results/flatgel/tri1u_sim_mac.png) |
+|:---:|:---:|
+|Linux|MacOS|
