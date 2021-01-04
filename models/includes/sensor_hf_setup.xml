@@ -15,11 +15,11 @@
   
   <include filename="components/perspective_cam.xml"/>
 
-  <include filename="components/gelcore_material.xml"/>
-  <shape type="obj">
+  <!-- <include filename="components/gelcore_material.xml"/> -->
+  <!-- <shape type="obj">
     <string name="filename" value="meshes/gelcore_with_light_faces_uv.obj"/>
     <ref id="coreBsdf"/>
-  </shape>
+  </shape> -->
 
   <default name="integratorFn" value="path_integrator"/>
   <include filename="components/$integratorFn.xml"/>
