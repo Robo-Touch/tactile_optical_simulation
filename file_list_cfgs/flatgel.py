@@ -1,7 +1,7 @@
 from os.path import join
 
 project_name = "flatgel"
-fname = join("models", "flatgel_with_hf.xml")
+fname = join("models", "flatgel_with_mesh.xml")
 
 data_folder = join("target_settings", "flatgel")
 img_folder = join(data_folder, "imgs")

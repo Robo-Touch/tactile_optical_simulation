@@ -11,6 +11,7 @@ import imageio
 imageio.plugins.freeimage.download()
 
 from tactile_optical_simulation.scene_cfg_loading_utils import load_render_cfg, load_img_with_cfg, load_scene_from_params
+from tactile_optical_simulation.folder_utils import create_folder
 
 # Load file list 
 from file_list_cfgs.flatgel import fname, img_list, project_name
@@ -27,9 +28,12 @@ for scene_id, params in enumerate(loading_param_list):
   print(f"Rendering {scene_id}/{len(loading_param_list)} fn:{params['baseFn']}")
 
   # Load the scene from an XML file
-  scene = load_file(load_file, **render_params, **params)
+  scene = load_file(fname, **render_params, **params)
 
   outFn = f"{params['baseFn']}_sim.exr"
+
+  # create output dir
+  create_folder("flatgel")
   outFn = join("results", "flatgel", outFn)
   
   scene.integrator().render(scene, scene.sensors()[0])
