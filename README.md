@@ -17,6 +17,10 @@ pip3 install -r requirements.txt
 - To choose the configuration file see files inside `file_list_cfgs`
 - To choose the render configurations see files inside `render_cfgs`
 
+# Expected Results
+![Real Sensor Image](target_settings/flatgel/imgs/pngs/tri1u.png)
+![Rendered Image](results/flatgel/tri1u_sim.png)
+
 # Visualization
 [qt4Image](https://github.com/edgarv/hdritools) gives consistent visualization for exr images across different platform. It can also generate low-dynamic range images with gamma encoding. You can download the utility for linux from [this](https://github.com/edgarv/hdritools/releases/download/0.5.0/qt4Image-Qt5_0.5.0-20170712-win64-amd64-vc141.zip) link.
 
@@ -28,3 +32,7 @@ pip3 install -r requirements.txt
 # Not supported
 - Bidirectional Path tracing
 - Heightfields
+
+# Known issues
+- Currently mitsuba2 outputs artifacts in rendered image on macOS
+![Mac Rendered Image](results/flatgel/tri1u_sim_mac.png)
