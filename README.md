@@ -28,7 +28,7 @@ pip3 install -r requirements.txt
 # Advanced
 - Building from source gives ability to run faster simulation by using GPU and setup optimization for different simulation models. The instructions to build from source are mentioned in [official documentation](https://mitsuba2.readthedocs.io/en/latest/) 
 - The model files for GelSight are in Mitsuba xml format. The [Mitsuba2 documentation](https://mitsuba2.readthedocs.io/en/latest/src/plugin_reference/intro.html) has details on the parameters and how to set them. 
-- The important file which are used in rendering for flatgel is or `models/flatgel_with_hf.xml` 
+- The important file which are used in rendering for flatgel is or `models/flatgel_with_mesh.xml` 
 
 # Not supported
 - Bidirectional Path tracing
