@@ -14,8 +14,13 @@ def load_render_cfg(fname="default.cfg"):
 
   default_params['resW'] = default_params['resW']//default_params["reduce_fac"]
   default_params['resH'] = default_params['resH']//default_params["reduce_fac"]
-  default_params['cropW'] = default_params['cropW']//default_params["reduce_fac"]
-  default_params['cropH'] = default_params['cropH']//default_params["reduce_fac"]
+
+  if "cropW" in default_params:
+    default_params['cropW'] = default_params['cropW']//default_params["reduce_fac"]
+    default_params['cropH'] = default_params['cropH']//default_params["reduce_fac"]
+  else:
+    default_params['cropW'] = default_params['resW']
+    default_params['cropH'] = default_params['resH']
 
   if default_params["full"]:
     default_params["cropX"] = (default_params["resW"] - default_params["cropW"])//2
