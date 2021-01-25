@@ -26,8 +26,9 @@ pip3 install -r requirements.txt
 User can render a new object by providing its mesh in Wavefront .obj format and passing its name as a param to render function. `new_mesh_render.py` provides an example. Please refer to the script for more details.
 - Execute `python new_mesh_render.py` to render a sensor view without any object pressed against it.
 
-# Visualization
-[qt4Image](https://github.com/edgarv/hdritools) gives consistent visualization for exr images across different platform. It can also generate low-dynamic range images with gamma encoding. You can download the utility for linux from [this](https://github.com/edgarv/hdritools/releases/download/0.5.0/qt4Image-Qt5_0.5.0-20170712-win64-amd64-vc141.zip) link.
+# Output Visualization
+- [tev](https://github.com/Tom94/tev) is a EXR viewer and comparison tool. You can download the latest executables from [here](https://github.com/Tom94/tev/releases/tag/v1.16)
+- [qt4Image](https://github.com/edgarv/hdritools) is another viewer for exr images across different platform. It can also generate low-dynamic range images with gamma encoding. You can download the utility for linux from [this](https://github.com/edgarv/hdritools/releases/download/0.5.0/qt4Image-Qt5_0.5.0-20170712-win64-amd64-vc141.zip) link.
 
 # Advanced
 - Building from source gives ability to run faster simulation by using GPU and setup optimization for different simulation models. The instructions to build from source are mentioned in [official documentation](https://mitsuba2.readthedocs.io/en/latest/) 
