@@ -10,13 +10,21 @@
   <!-- <default name="blueIntensity" value="460:1000, 465:1000"/> -->
 
   <!-- flatgel -->
-  <default name="redIntensity" value="630:100, 645:100"/>
+  <!-- <default name="redIntensity" value="630:100, 645:100"/>
   <default name="greenIntensity" value="525:500, 530:500"/>
-  <default name="blueIntensity" value="460:1000, 465:1000"/>
+  <default name="blueIntensity" value="460:1000, 465:1000"/> -->
 
-  <include filename="components/redSpotGroup.xml"/>
+  <default name="redIntensity" value="5.237216, 0, 0"/>
+  <default name="greenIntensity" value="0.171378,6.734968,0.000000"/>
+  <default name="blueIntensity" value="0,0,6.839277"/>
+
+  <include filename="components/redAreaLight.xml"/>
+  <include filename="components/greenAreaLight.xml"/>
+  <include filename="components/blueAreaLight.xml"/>
+
+  <!-- <include filename="components/redSpotGroup.xml"/>
   <include filename="components/greenSpotGroup.xml"/>
-  <include filename="components/blueSpotGroup.xml"/>
+  <include filename="components/blueSpotGroup.xml"/> -->
 
   <!-- <include filename="fragments/blueSpotGroup.xml"/> -->
   <!-- <include filename="fragments/greenAreaLight.xml"/> -->

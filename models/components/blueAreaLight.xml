@@ -1,0 +1,19 @@
+<scene version="0.6.0">
+  <shape type="obj" id="blueAreaLight">
+    <!-- <string name="filename" value="meshes/rectangle-meshlab.obj"/> -->
+    <string name="filename" value="meshes/rectangle-meshlab-2pieces-smaller_v3.obj"/>
+    <transform name="toWorld">
+      <scale x="6" y="4.45" z="1"/>
+      <rotate x="1" angle="-19"/>
+      <translate x="0" y="4.207" z="-12.59"/>
+      <rotate y="1" angle="120"/>
+    </transform>
+
+    <ref id="black"/>
+
+    <emitter type="area">
+      <rgb name="radiance" value="$blueIntensity"/>
+    </emitter>
+
+  </shape>
+</scene>
