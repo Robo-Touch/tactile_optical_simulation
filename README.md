@@ -45,3 +45,13 @@ User can render a new object by providing its mesh in Wavefront .obj format and 
 | ![Linux](results/flatgel/tri1u_sim.png) | ![Mac](results/flatgel/tri1u_sim_mac.png) |
 |:---:|:---:|
 |Linux|MacOS|
+
+# Citation
+```bibtex
+@article{agarwal2020simulation,
+  title={Simulation of Vision-based Tactile Sensors using Physics based Rendering},
+  author={Agarwal, Arpit and Man, Tim and Yuan, Wenzhen},
+  journal={arXiv preprint arXiv:2012.13184},
+  year={2020}
+}
+```
