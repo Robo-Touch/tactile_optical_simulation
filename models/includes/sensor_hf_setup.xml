@@ -24,6 +24,7 @@
   <default name="integratorFn" value="path_integrator"/>
   <include filename="components/$integratorFn.xml"/>
 
-  <include filename="components/elastomer_material.xml"/>
+  <default name="gelMatFn" value="flat_elastomer_material"/>
+  <include filename="components/$gelMatFn.xml"/>
   
 </scene>

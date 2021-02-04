@@ -1,0 +1,12 @@
+<scene version="0.6.0">
+
+  <bsdf type="twosided" id="elastomerBsdf">
+    <bsdf type="diffuse">
+      <!-- <rgb name="reflectance" value="0.506197,0.396516,0.453324"/> -->
+      <texture type="bitmap" name="reflectance">
+        <string name="filename" value="textures/flatgel_surface_texture.png"/>
+    	</texture>
+    </bsdf>
+  </bsdf> 
+
+</scene>

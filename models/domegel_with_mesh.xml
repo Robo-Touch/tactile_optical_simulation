@@ -1,0 +1,30 @@
+<scene version="0.6.0">
+
+  <default name="cropW" value="600"/>
+  <default name="cropH" value="600"/>
+  <default name="cropX" value="956"/>
+  <default name="cropY" value="884"/>
+  
+  <include filename="includes/sensor_hf_setup.xml"/>
+
+  <default name="hfName" value="dome_rball1s" />
+  <default name="elastomerDist" value="13"/>
+  <default name="hfScale" value="1"/>
+  <default name="gelMatFn" value="dome_elastomer_material"/>
+
+  <shape type="obj" name="gelpad">
+    <boolean name="faceNormals" value="false"/>
+    <transform name="toWorld">
+      <scale x="20" y="20" z="20"/>
+      <scale z="$hfScale"/>
+      <rotate x="1" angle="90"/>
+      <rotate z="1" angle="180"/>
+      <translate x="0" y="$elastomerDist" z="0"/>
+    </transform>
+
+    <string name="filename" value="meshes/$hfName.obj"/>
+    
+    <ref id="elastomerBsdf"/>
+  </shape>
+
+</scene>

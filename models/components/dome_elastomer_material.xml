@@ -1,0 +1,9 @@
+<scene version="0.6.0">
+
+  <bsdf type="twosided" id="elastomerBsdf">
+    <bsdf type="diffuse">
+      <rgb name="reflectance" value="0.267310,0.239139,0.384665"/>
+    </bsdf>
+  </bsdf> 
+
+</scene>
