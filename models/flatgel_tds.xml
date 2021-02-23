@@ -1,0 +1,27 @@
+<scene version="0.6.0">
+	<include filename="flatgel_with_mesh.xml"/>
+	<default name="pressedObjectName" value="unit_sphere"/>
+
+	<default name="elastomerDist" value="13"/>
+	<default name="sphereRad" value="1.5"/>
+
+	<default name="tx" value="0"/>
+	<default name="ty" value="0"/>
+	<default name="tz" value="0"/>
+
+	<shape type="obj" id="pressedObj">
+    <boolean name="faceNormals" value="false"/>
+    <ref id="elastomerBsdf"/>
+
+    <transform name="toWorld">
+      <scale x="$sphereRad" y="$sphereRad" z="$sphereRad"/>
+      <translate x="0" y="$elastomerDist" z="0"/>
+
+      <translate x="$tx" y="$ty" z="$tz"/>
+
+    </transform>
+
+    <string name="filename" value="meshes/$pressedObjectName.obj"/>
+   
+  </shape>
+</scene>

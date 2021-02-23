@@ -15,9 +15,9 @@
   
   <include filename="components/perspective_cam.xml"/>
 
-  <!-- <include filename="components/gelcore_material.xml"/> -->
+  <include filename="components/gelcore_material.xml"/>
   <!-- <shape type="obj">
-    <string name="filename" value="meshes/gelcore_with_light_faces_uv.obj"/>
+    <string name="filename" value="meshes/gelcore.obj"/>
     <ref id="coreBsdf"/>
   </shape> -->
 

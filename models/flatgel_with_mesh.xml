@@ -8,7 +8,7 @@
   
   <include filename="includes/sensor_hf_setup.xml"/>
 
-  <default name="hfName" value="gelpad_tri0s" />
+  <default name="hfName" value="gelpad" />
   <default name="elastomerDist" value="13"/>
   <default name="hfScale" value="-1"/>
   <default name="gelMatFn" value="flat_elastomer_material"/>
