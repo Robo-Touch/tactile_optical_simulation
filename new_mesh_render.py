@@ -1,16 +1,13 @@
 from os.path import join
 from os import path as osp
 
-import mitsuba
-mitsuba.set_variant("packet_rgb")
-from mitsuba.core.xml import load_file
-from mitsuba.core import Thread, LogLevel
-
-logger = Thread.thread().logger()
-logger.set_log_level(LogLevel.Warn)
+import mitsuba as mi
+mitsuba.set_variant("llvm_ad_rgb")
 
 from tactile_optical_simulation.scene_cfg_loading_utils import load_render_cfg
 from tactile_optical_simulation.folder_utils import create_folder
+
+from ipdb import set_trace
 
 cdir = osp.dirname(osp.abspath(__file__))
 
@@ -30,15 +27,17 @@ if ext != '.obj':
 	exit(1)
 
 mesh_dname = osp.dirname(new_mesh_fn)
-Thread.thread().file_resolver().append(mesh_dname)
+mi.Thread.thread().file_resolver().append(mesh_dname)
 
 dname = osp.dirname(model_fn)
-Thread.thread().file_resolver().append(dname)
+mi.Thread.thread().file_resolver().append(dname)
 render_params = load_render_cfg(render_params_fn)
 params = {
 	"hfName" : mesh_bname
 }
-scene = load_file(model_fn, **render_params, **params)
+
+set_trace()
+scene = mi.load_file(model_fn, **render_params, **params)
 integrator = scene.integrator()
 cam = scene.sensors()[0]
 

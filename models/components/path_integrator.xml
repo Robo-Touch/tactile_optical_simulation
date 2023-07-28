@@ -1,6 +1,8 @@
 <scene version="0.6.0">
+  <default name="num_bounces" value="4"/>
+  
   <integrator type="path">
-    <integer name="maxDepth" value="4"/>
+    <integer name="maxDepth" value="$num_bounces"/>
     <integer name="rrDepth" value="10"/>
   </integrator>
 </scene>

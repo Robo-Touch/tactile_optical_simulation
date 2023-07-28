@@ -79,12 +79,11 @@ def load_img_with_cfg(train_img_list, default_params):
   return loading_param_list, target_im_list
 
 def load_scene_from_params(train_img_list, fname, default_params):
-  import mitsuba
-  from mitsuba.core.xml import load_file
+  import mitsuba as mi
   
   loading_param_list, target_im_list = load_img_with_cfg(train_img_list, default_params)
   scene_list = []
   for params in loading_param_list:
-    scene = load_file(fname, **default_params, **params)
+    scene = mi.load_file(fname, **default_params, **params)
     scene_list.append(scene) 
   return scene_list, target_im_list

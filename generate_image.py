@@ -1,10 +1,5 @@
-import mitsuba
-mitsuba.set_variant("packet_rgb")
-from mitsuba.core.xml import load_file
-from mitsuba.core import Thread, LogLevel
-
-logger = Thread.thread().logger()
-logger.set_log_level(LogLevel.Warn)
+import mitsuba as mi
+mi.set_variant("llvm_ad_rgb")
 
 from os import path as osp
 from os.path import join
@@ -23,27 +18,30 @@ cdir = osp.dirname(osp.abspath(__file__))
 
 # Register any searchs path needed to load scene resources (optional)
 dname = osp.dirname(fname)
-Thread.thread().file_resolver().append(join(cdir, dname))
+mi.Thread.thread().file_resolver().append(join(cdir, dname))
 
 # load render params
 render_params = load_render_cfg(join(cdir, "render_cfgs", "focussed.cfg"))
 loading_param_list, target_im_list = load_img_with_cfg(img_list, render_params)
+# remove model_folder from render_params
+del render_params["model_folder"]
+del render_params["reduce_fac"]
+del render_params["full"]
 
 for scene_id, params in enumerate(loading_param_list):
-  print(f"Rendering {scene_id}/{len(loading_param_list)} fn:{params['baseFn']}")
+  baseFn = params["baseFn"]
+  del params["baseFn"]
+  print(f"Rendering {scene_id}/{len(loading_param_list)} fn:{baseFn}")
 
   # Load the scene from an XML file
-  scene = load_file(fname, **render_params, **params)
+  print(render_params, params)
+  scene = mi.load_file(fname, **render_params, **params)
 
-  outFn = f"{params['baseFn']}_sim.exr"
+  outFn = f"{baseFn}_sim.png"
 
   # create output dir
   create_folder(join("results", "flatgel"))
   outFn = join("results", "flatgel", outFn)
   
-  scene.integrator().render(scene, scene.sensors()[0])
-
-  # After rendering, the rendered data is stored in the film
-  film = scene.sensors()[0].film()
-  film.set_destination_file(outFn)
-  film.develop()
+  image = mi.render(scene, spp=render_params["num_samples"])
+  mi.util.write_bitmap(outFn, image)
