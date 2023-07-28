@@ -1,12 +1,9 @@
 import mitsuba as mi
-mi.set_variant("llvm_ad_rgb")
+# mi.set_variant("llvm_ad_rgb")
+mi.set_variant("scalar_rgb")
 
 from os import path as osp
 from os.path import join
-
-import imageio 
-# to load exrs
-imageio.plugins.freeimage.download()
 
 from tactile_optical_simulation.scene_cfg_loading_utils import load_render_cfg, load_img_with_cfg, load_scene_from_params
 from tactile_optical_simulation.folder_utils import create_folder

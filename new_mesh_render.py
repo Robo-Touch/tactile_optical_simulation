@@ -2,7 +2,7 @@ from os.path import join
 from os import path as osp
 
 import mitsuba as mi
-mitsuba.set_variant("llvm_ad_rgb")
+mitsuba.set_variant("scalar_rgb")
 
 from tactile_optical_simulation.scene_cfg_loading_utils import load_render_cfg
 from tactile_optical_simulation.folder_utils import create_folder
