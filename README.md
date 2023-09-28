@@ -37,13 +37,6 @@ User can render a new object by providing its mesh in Wavefront .obj format and 
 - Bidirectional Path tracing
 - Heightfields
 
-# Known issues
-- Currently mitsuba2 outputs artifacts in rendered image on macOS  
-
-| ![Linux](results/flatgel/tri1u_sim.png) | ![Mac](results/flatgel/tri1u_sim_mac.png) |
-|:---:|:---:|
-|Linux|MacOS|
-
 # Citation
 ```bibtex
 @article{agarwal2020simulation,
